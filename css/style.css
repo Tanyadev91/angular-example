@@ -1,0 +1,31 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+ui-view {
+  display: inline-block;
+  margin-top: 65px;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  margin: 5px 0;
+}
+li img {
+  max-width: 20px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+  ui-view {
+    margin-top: 45px;
+  }
+}

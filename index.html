@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Angular router App</title>
+  <meta name="description" content="Angular simple app">
+  <meta name="author" content="Tanyadev91">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <script src="js/app.module.js"></script>
+  <script src="js/app.config.js"></script>
+  <script src="js/list.component.js"></script>
+
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+  <body ng-app="home">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Sample Angular App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a ui-sref="home" class="nav-link" ui-sref-active="active">Hello</a>
+            </li>
+            <li class="nav-item">
+              <a ui-sref="list" class="nav-link" ui-sref-active="active">List</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <ui-view></ui-view>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

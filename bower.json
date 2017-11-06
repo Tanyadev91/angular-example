@@ -1,0 +1,17 @@
+{
+  "name": "angular-app",
+  "authors": [
+    "asimovat <Asimovatanya88@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
